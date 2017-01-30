@@ -16,36 +16,24 @@ function createiFrame() {
   $( function() {
     $( '.ui-widget-content' ).draggable();
   }) ;
-  chatBox.contentWindow.addEventListener('message', showMessage);
-
-  iframe = document.querySelectorAll('iframe');
-  var form = chatBox.document.getElementById("form");
-  form.addEventListener('submit', sendMessage, false);
-}
-
-function sendMessage(event) {
-  event.preventDefault();
-  var message = document.querySelector('#message').value;
-  // var iframe = iframe.document.getElementById("postMessageButton");
-  iframe.parent.postMessage(message, "*");
-  return false;
-}
-
-function receiveMessage(event) {
-  var data = event.data;
-  showMessage(data);
-}
-
-function showMessage(messageTxt) {
-  var messageList = document.getElementById('list');
-  var listItem = document.createElement('li');
-  listItem.appendChild(document.createTextNode(messageTxt));
-  messageList.appendChild(listItem);
 }
 
 if (button) {
   button.addEventListener('click', createiFrame);
 }
+
+window.addEventListener('message', function(event) {
+  var iframeNodes = document.querySelectorAll('iframe');
+  iframeNodes.forEach(function(node) {
+    node.contentWindow.postMessage(event.data, '*');
+  });
+});
+
+
+
+
+
+
 
 
 
