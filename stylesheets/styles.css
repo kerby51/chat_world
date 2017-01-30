@@ -1,0 +1,33 @@
+#body {
+  background-color: #446CB3;
+}
+
+#header {
+  color: white;
+  text-align: center;
+  margin-top: 0%;
+  padding: 4px;
+  font-size: 3.3rem;
+  border-bottom: 3px dotted white;
+  font-family: 'Rock Salt', cursive;
+}
+
+#main {
+  width: 100%;
+}
+
+#button {
+  font-size: 2rem;
+  /*margin: 0 auto;*/
+}
+
+.ui-widget-content {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  padding: 0.2em;
+}
+
+.form {
+  margin-top: 150px;
+}
