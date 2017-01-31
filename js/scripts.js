@@ -10,7 +10,7 @@ function createiFrame() {
   chatBox.setAttribute('class', 'ui-widget-content');
   chatBox.setAttribute('id', 'IFrame ' + chatNum);
   chatBox.setAttribute('draggable', 'true');
-  chatBox.setAttribute('src', 'other.html');
+  chatBox.setAttribute('src', 'iframe.html');
   target.appendChild(chatBox);
   $( function() {
     $( '.ui-widget-content' ).draggable();
