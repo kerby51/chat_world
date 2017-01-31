@@ -2,14 +2,19 @@
   background-color: #446CB3;
 }
 
+body {
+  font-family: Helvetica;
+  font-size: 0.8rem;
+}
+
 #header {
   color: white;
   text-align: center;
   margin-top: 0%;
   padding: 4px;
-  font-size: 3.3rem;
+  font-size: 3.8rem;
   border-bottom: 3px dotted white;
-  font-family: 'Rock Salt', cursive;
+  font-family: 'Monoton', cursive;
 }
 
 #main {
@@ -17,17 +22,37 @@
 }
 
 #button {
-  font-size: 2rem;
-  /*margin: 0 auto;*/
+  font-size: 5.1rem;
+  color: yellow;
+  padding: 0;
+  border: none;
+  background: none;
+  text-align: center;
+  margin-left: 48%;
+  margin-top: -1%;
+}
+
+#button:hover {
+  color: magenta;
+}
+
+#list {
+  list-style-type: none;
+  padding: 0;
 }
 
 .ui-widget-content {
   background-color: white;
-  width: 200px;
-  height: 200px;
+  width: 260px;
+  height: 220px;
   padding: 0.2em;
 }
 
-.form {
-  margin-top: 150px;
+iframe {
+  border: 2px dotted black;
+}
+
+form {
+  border-top: 1px solid black;
+  padding-top: 4px;
 }
