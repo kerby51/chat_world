@@ -1,6 +1,6 @@
 var parent = window.parent;
 
-var form = document.querySelector('.form');
+var form = document.getElementById('form');
 
 
 //message's innerHTML will be an li appended (and formatted by formatMessage) to the ul #list
